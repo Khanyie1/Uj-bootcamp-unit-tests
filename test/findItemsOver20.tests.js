@@ -1,5 +1,5 @@
 describe ("The findItemsOver20 function test status :", function() {
-    it("The findItemsOver20 function passed the assertion tests", function () {
+    it("The findItemsOver20 should returns the array of qty that are over 20: Result 2 items", function () {
         var itemList = [
             {name : 'apples', qty : 10},
             {name : 'pears', qty : 37},
@@ -12,6 +12,12 @@ describe ("The findItemsOver20 function test status :", function() {
             {name : 'bananas', qty : 27},
         ];
         
+        //
+        assert.deepEqual(results, findItemsOver20(itemList));
+        console.log('findItemsOver20 passed!')
+    })
+
+    it("The findItemsOver20 should returns the array of qty that are over 20: Result None/Empty", function(){
         var itemList2 = [
             {name : 'apples', qty : 10},
             {name : 'pears', qty : 19},
@@ -20,7 +26,12 @@ describe ("The findItemsOver20 function test status :", function() {
         ];
         
         var results2 = [];
-        
+
+        assert.deepEqual(results2, findItemsOver20(itemList2));
+        console.log('findItemsOver20 passed!')
+    })
+
+    it("The findItemsOver20 should returns the array of qty that are over 20: Result 3 items", function(){
         var itemList3 = [
             {name : 'apples', qty : 40},
             {name : 'pears', qty : 20},
@@ -33,12 +44,8 @@ describe ("The findItemsOver20 function test status :", function() {
             {name : 'bananas', qty : 23},
             {name : 'apples', qty : 37}
         ];
-        
-        //
-        assert.deepEqual(results, findItemsOver20(itemList));
-        assert.deepEqual(results2, findItemsOver20(itemList2));
+
         assert.deepEqual(results3, findItemsOver20(itemList3));
-        
         console.log('findItemsOver20 passed!')
     })
 })

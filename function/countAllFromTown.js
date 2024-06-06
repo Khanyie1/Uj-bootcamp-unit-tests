@@ -9,6 +9,7 @@ function countAllFromTown(regNo, forTown) {
             CarRegNoCount++;
         }
     }
+    console.log(forTown);
   	console.log(CarRegNoCount);
     return CarRegNoCount;
 }

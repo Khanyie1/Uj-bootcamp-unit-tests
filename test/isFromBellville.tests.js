@@ -1,6 +1,9 @@
 describe('The isFromBellville function test status :' , function(){
-    it('The isFromBellville function passed the assertion tests', function(){
+    it('The isFromBellville validates the reg no. starts with CY: if startsWith CY, return true', function(){
         assert.equal(isFromBellville('CY 123'), true);
-        assert.equal(isFromBellville('CJ 123'), false);
     });
+
+    it("The isFromBellville validates the reg no. starts with CY: if startsWith something else, return false", function() {
+        assert.equal(isFromBellville('CJ 123'), false);
+    })
 });

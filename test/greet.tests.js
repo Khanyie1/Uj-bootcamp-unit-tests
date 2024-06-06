@@ -1,6 +1,9 @@
 describe('The greet function test status :' , function(){
-    it('The greet function passed the assertion tests', function(){
+    it('The anticipated result: Hello, Bob', function(){
         assert.equal(greet('Bob'), 'Hello, Bob');
-        assert.equal(greet('Sam'), 'Hello, Sam');
     });
+
+    it('The anticipated result: Hello, Sam', function() {
+        assert.equal(greet('Sam'), 'Hello, Sam');
+    })
 });

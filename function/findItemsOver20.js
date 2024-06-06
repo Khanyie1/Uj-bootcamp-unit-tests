@@ -4,10 +4,10 @@ function findItemsOver20(item){
     {
         var prod = item[i].qty;
         if(prod > 20){
-        //count += prod;
             Array.push(item[i]);
         }
     }
+    console.log("Hard Coded Threshold: 20")
     console.log(Array);
     return Array;
 }

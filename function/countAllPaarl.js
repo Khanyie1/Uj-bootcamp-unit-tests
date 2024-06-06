@@ -13,6 +13,7 @@ function countAllPaarl(regCarNo)
         	CountList++;
       }
     }
+    console.log(carRegNo);
   	console.log(CountList);
   	return CountList;
 }

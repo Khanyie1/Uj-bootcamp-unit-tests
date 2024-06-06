@@ -9,5 +9,6 @@ function findItemsOver(itemsProd, threshold){
         }
     }
     console.log(ArrayProd);
+    console.log(threshold);
     return ArrayProd;
 }
